@@ -8,17 +8,34 @@ wrapper{
   width: 100%; 
   position: fixed;
 }
+
+a:link{
+  text-decoration: none;
+  color: #000000;
+}
+a {
+  color: #000;
+}
+a:visited {
+   color: rgb(0, 0, 0);
+}
+a:hover {
+   color: #000;
+}
+a:active {
+   color: #000;
+}
                    /* TOPO */
 navbar{
 height: 9%;
 width: 80%;
 position: fixed;
-top:  5%;
+top:  3%;
 left: 10%;
 border-radius: 12px;
 border-width: 0px;
 border-style: solid;
-background-color: #36ad54b2;
+background-color: #36ad54fa;
 z-index: 1;
 }
 
@@ -45,14 +62,15 @@ z-index: 1;
 }
 
 .logo{
-  font-family: "Audiowide", sans-serif;
+  font-family: "BebasNeue-Regular";
   font-style: oblique;
   font-weight: bold;
   font-variant: normal;
-  font-size: 30px;
+  font-size: 25px;
   position: absolute;
-  top: 20%;
-  left: 2%;
+  top:  25%;
+  left: 3%;
+
 }
 
 #button-project-1 {
@@ -63,19 +81,20 @@ z-index: 1;
   border: 0px;
   position: relative;
   top: 5%;
-  left: 54%;
+  left: 45%;
 
   font-family: "Audiowide", sans-serif;
   font-style: oblique;
   font-weight: bold;
   font-variant: normal;
   font-size: 20px;
+  
   }
   
   #button-project-1:hover {
     padding: 14px 40px; 
     border-radius: 12px;
-    background-color: #3a8a21; 
+    background-color: #ddd; 
     border: 0px;
 
     font-family: "Audiowide", sans-serif;
@@ -85,35 +104,62 @@ z-index: 1;
     font-size: 20px;
   }
 
-  #button-project-2 {
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    top: 5%;
+    left: 80%;
+    
+  }
+  .dropdown .dropbtn {
     padding: 14px 30px;
     border-radius: 12px;
     transition-duration: 0.4s;
     background-color: #36ad54b2;
     border: 0px;
-    position: relative;
-    top: 5%;
-    left: 56%;
+  
 
     font-family: "Audiowide", sans-serif;
     font-style: oblique;
     font-weight: bold;
     font-variant: normal;
-    font-size: 20px;
-    }
-    
-    #button-project-2:hover {
-      padding: 14px 40px; 
-      border-radius: 12px;
-      background-color: #3a8a21; 
-      border: 0px;
+    font-size: 20px;/* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  .dropdown:hover .dropbtn {
+    background-color: #ddd;
+    padding: 14px 40px; 
+  }
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #36ad54b2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+    font-family: "Audiowide", sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-variant: normal;
 
-      font-family: "Audiowide", sans-serif;
-      font-style: oblique;
-      font-weight: bold;
-      font-variant: normal;
-      font-size: 20px;
-    }
+    
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }      
 
                            /* CONTEUDO */
 
@@ -203,7 +249,7 @@ z-index: 1;
 
     .problematização{
       width: 900px;
-      height: 350px;
+      height: 340px;
       left: 70px;
       top: 30%;
       background-color: #bbbbbb;
@@ -230,11 +276,37 @@ z-index: 1;
       bottom: 1%;
       
     }
+
+    .intlink{
+      position: relative;
+      top: -10%;
+      left: 0%;
+      width: 50px;
+      height: 50px;
+      
+    }
     
+   .propostalink{
+      position: relative;
+      top: -39%;
+      left: 0%;
+      width: 50px;
+      height: 50px;
+    
+   }
+
+   .sistemlink{
+    position: relative;
+    top: 61%;
+    left: 0%;
+    width: 50px;
+    height: 50px;
+
+ }
 
     .proposta{
       width: 900px;
-      height: 250px;
+      height: 300px;
       left:   400px;
       top:    150%;
       background-color: #bbbbbb;
@@ -247,7 +319,7 @@ z-index: 1;
 
     .sistem{
       width: 900px;
-      height: 250px;
+      height: 300px;
       left: 30px;
       top: 250%;
       background-color: #bbbbbb;
@@ -316,8 +388,8 @@ z-index: 1;
       position: relative;
       text-align: center;
       font-weight: bold;
-      left:    51%;
-      top:    -40%; 
+      left:    41%;
+      top:     -20%; 
     }
 
     .descproble{
@@ -401,6 +473,7 @@ z-index: 1;
       font-weight: bold;
       left:    39%;
       top:  8%; 
+     
     }
 
 
@@ -469,10 +542,23 @@ z-index: 1;
 
     .fotointe{
       border-radius: 70%;
-      width:  170px;
+      width:  148px;
       height: 190px;
-      right:    55px;
-      bottom:   90px;
+      right:    25%;
+      bottom:   25%;
+      background-color: #ecf6fc;
+      border-radius: 12%;
+      display: inline-block;
+      position: absolute;
+      box-shadow: 5px 10px 50px #61606078;
+    }
+
+    .fotointe2{
+      border-radius: 70%;
+      width:  157px;
+      height: 190px;
+      right:    23%;
+      bottom:   25%;
       background-color: #ecf6fc;
       border-radius: 12%;
       display: inline-block;
@@ -496,6 +582,10 @@ z-index: 1;
       box-shadow: 5px 10px 50px #4e4e4e78;
     }
      
+
+     
+
+
     @font-face {
       font-family:'Poppins-Medium' ;
       src: url(../font/popos/Poppins-Medium.ttf);
@@ -504,4 +594,9 @@ z-index: 1;
     @font-face {
       font-family:'BebasNeue-Regular' ;
       src: url(../font/bebas/BebasNeue-Regular.ttf);
+    }
+
+    @font-face{
+      font-family:'FredokaOne-Regular';
+      src: url(../font/fredoka/FredokaOne-Regular.ttf)
     }
