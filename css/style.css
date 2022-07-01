@@ -618,8 +618,37 @@ z-index: 1;
     }
 
  
+/* Linhas */
 
+.linha01{
+  width: 65%;
+  height: 1%;
+  border-radius: 90%;
+  background-color: #0a7a0078;
+  position: relative;
+  top: 8%;
+  left: 0%;
+}
+
+.linha02  {
+  width: 65%;
+  height: 1%;
+  border-radius: 90%;
+  background-color: #0a7a0078;
+  position: relative;
+  top: -30%;
+  left: 35%;
+}
     
+.linha03  {
+  width: 65%;
+  height: 1%;
+  border-radius: 90%;
+  background-color: #0a7a0078;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
      /* Roda pé */
 
      .rodape{
